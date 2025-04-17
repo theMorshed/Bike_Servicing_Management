@@ -50,11 +50,15 @@ export const updateServicesByIDService = async(serviceId: string, data: Partial<
         }
     });
 
+    if (Object.keys(data).length === 0 || data.completionDate) {
+        data.status = 'done';
+    }
+
     const result = await prisma.serviceRecord.update({
         where: {
             serviceId
         },
-        data
+        data: data
     });
 
     return result;

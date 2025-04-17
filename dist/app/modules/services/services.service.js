@@ -54,11 +54,14 @@ const updateServicesByIDService = (serviceId, data) => __awaiter(void 0, void 0,
             serviceId
         }
     });
+    if (Object.keys(data).length === 0 || data.completionDate) {
+        data.status = 'done';
+    }
     const result = yield prisma_1.prisma.serviceRecord.update({
         where: {
             serviceId
         },
-        data
+        data: data
     });
     return result;
 });
