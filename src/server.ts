@@ -5,7 +5,7 @@ const port = 3000;
 
 async function main() {
     const server: Server = app.listen(port, () => {
-        console.log('PH healthcare is listening on port', port);
+        console.log('Bike servicing Management is listening on port', port);
     });
 }
 
