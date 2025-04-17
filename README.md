@@ -4,7 +4,7 @@ This is a modular service management backend system designed for bike service ce
 
 ## 🚀 Deployment
 
-🔗 **Live API URL:** [https://bikeservicingmanagement.vercel.app/](Bike_servicing_management)
+🔗 **Live API URL:** [Bike_servicing_management_backend](https://bikeservicingmanagement.vercel.app/)
 
 ## Key Features
 
